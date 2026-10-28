@@ -1,0 +1,89 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.privatusanalytics",
+    "module": "privatus-analytics",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 25,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "privatus-analytics-1.0.0.jar",
+          "url": "privatus-analytics-1.0.0.jar",
+          "size": 255718,
+          "sha512": "c275ae61838c49573544f2e0e5016d7d7f0a8745350c0788c41a6a8fb71e65e4b605f4101def8cf3cf58775cd93fa0001bfb7052c3da2fd05a61b831f969209f",
+          "sha256": "9990a69b830363325d0cc33fb044dea4715f281b5942f28b00a44a58e29ff8ae",
+          "sha1": "2b4112a08a424ad131b34360ed8241123915a7c8",
+          "md5": "b31b5a19f23e15687ef376fb2a270315"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 25,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.enonic.xp",
+          "module": "lib-portal",
+          "version": {
+            "requires": "8.1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "privatus-analytics-1.0.0.jar",
+          "url": "privatus-analytics-1.0.0.jar",
+          "size": 255718,
+          "sha512": "c275ae61838c49573544f2e0e5016d7d7f0a8745350c0788c41a6a8fb71e65e4b605f4101def8cf3cf58775cd93fa0001bfb7052c3da2fd05a61b831f969209f",
+          "sha256": "9990a69b830363325d0cc33fb044dea4715f281b5942f28b00a44a58e29ff8ae",
+          "sha1": "2b4112a08a424ad131b34360ed8241123915a7c8",
+          "md5": "b31b5a19f23e15687ef376fb2a270315"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "privatus-analytics-1.0.0-sources.jar",
+          "url": "privatus-analytics-1.0.0-sources.jar",
+          "size": 4869,
+          "sha512": "c0eb9b32b4febe410592658c866992a04cb3a043261f186f904e7e1fc930a0d172d3a3429f40ae6879014e2b7a847fb8d7439e7634f92afd371ecbb4f1a60b4a",
+          "sha256": "f6240259b60f47efd3216aca0191ed7aca190e36d004ad626f599e4a3aeac87b",
+          "sha1": "4da94cb0b7735ce19f26f557694c6ceed1a7cecb",
+          "md5": "5d8e46a8c4304b3a281eebfb60e088b4"
+        }
+      ]
+    }
+  ]
+}
