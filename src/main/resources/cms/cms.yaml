@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=https://www.schemastore.org/enonic-xp-cms-8.0.0.json
+kind: "CMS"
+form:
+  - type: "TextLine"
+    name: "siteId"
+    label:
+      text: "Site ID"
+      i18n: "cms.siteId"
+    helpText:
+      text: "Starts with pa_. Find it in Privatus Analytics under Site settings, Tracking."
+      i18n: "cms.siteId.helpText"
+    occurrences:
+      min: 1
+      max: 1
+    regexp: "^pa_[A-Za-z0-9]+$"
+
+  - type: "CheckBox"
+    name: "moduleEngage"
+    label:
+      text: "Time on page and how far people scroll"
+      i18n: "cms.moduleEngage"
+    helpText:
+      text: "Loads the engage module."
+      i18n: "cms.moduleEngage.helpText"
+    default: "checked"
+
+  - type: "CheckBox"
+    name: "moduleAuto"
+    label:
+      text: "Clicks on outside links, file downloads, forms people send and missing pages (404)"
+      i18n: "cms.moduleAuto"
+    helpText:
+      text: "Loads the auto module."
+      i18n: "cms.moduleAuto.helpText"
+    default: "checked"
+
+  - type: "CheckBox"
+    name: "moduleVitals"
+    label:
+      text: "Page speed (Web Vitals)"
+      i18n: "cms.moduleVitals"
+    helpText:
+      text: "Loads the vitals module."
+      i18n: "cms.moduleVitals.helpText"
+    default: "checked"
+
+  - type: "CheckBox"
+    name: "moduleClicks"
+    label:
+      text: "Click maps"
+      i18n: "cms.moduleClicks"
+    helpText:
+      text: "Loads the clicks module. It counts clicks on each link and button."
+      i18n: "cms.moduleClicks.helpText"
+    default: "checked"
+
+  - type: "CheckBox"
+    name: "moduleAsk"
+    label:
+      text: "Short surveys on your site"
+      i18n: "cms.moduleAsk"
+    helpText:
+      text: "Loads the ask module. It shows the surveys you make in Privatus Analytics."
+      i18n: "cms.moduleAsk.helpText"
+    default: "checked"
+
+  - type: "CheckBox"
+    name: "automaticallyAddToPage"
+    label:
+      text: "Automatically add script to page"
+      i18n: "cms.automaticallyAddToPage"
+    helpText:
+      text: "Untick this for a headless site that builds its pages somewhere else."
+      i18n: "cms.automaticallyAddToPage.helpText"
+    default: "checked"

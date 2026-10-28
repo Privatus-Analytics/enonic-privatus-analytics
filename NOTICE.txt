@@ -1,0 +1,34 @@
+Privatus Analytics app for Enonic XP
+Copyright (c) 2026 Two Phase LLC
+Licensed under the MIT License. See LICENSE.txt.
+
+This app's own code is MIT licensed. The built JAR also bundles the following
+libraries, unchanged, under their own licences:
+
+  com.enonic.xp:lib-portal:8.1.0
+    Enonic XP Portal library
+    Apache License 2.0
+    https://github.com/enonic/xp/blob/master/LICENSE_AL.txt
+
+  com.enonic.xp:lib-content:8.1.0
+    Enonic XP Content library (pulled in by lib-portal)
+    Apache License 2.0
+    https://github.com/enonic/xp/blob/master/LICENSE_AL.txt
+
+  com.enonic.xp:lib-common:8.1.0
+    Enonic XP Common library (pulled in by lib-portal)
+    Apache License 2.0
+    https://github.com/enonic/xp/blob/master/LICENSE_AL.txt
+
+Build tools (not bundled in the JAR):
+
+  Gradle wrapper (gradlew, gradlew.bat, gradle/wrapper/gradle-wrapper.jar)
+    Apache License 2.0
+    https://github.com/gradle/gradle/blob/master/LICENSE
+
+  com.enonic.xp.app and com.enonic.xp.settings Gradle plugins
+    Apache License 2.0
+
+At run time the app adds a script tag that loads https://privatusstats.com/js/pa.js
+in the visitor's browser. That script is part of the Privatus Analytics service
+and is not included in this app.

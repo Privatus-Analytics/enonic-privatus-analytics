@@ -1,0 +1,5 @@
+# yaml-language-server: $schema=https://www.schemastore.org/enonic-xp-site-8.0.0.json
+kind: "Site"
+processors:
+  - name: "privatus-analytics"
+    order: 10

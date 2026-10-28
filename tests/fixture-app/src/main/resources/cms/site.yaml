@@ -1,0 +1,4 @@
+kind: "Site"
+mappings:
+  - controller: "/fixture/page.js"
+    pattern: "/.*"

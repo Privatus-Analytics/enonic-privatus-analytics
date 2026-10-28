@@ -1,0 +1,60 @@
+plugins {
+  id "maven-publish"
+  id "com.enonic.xp.app"
+}
+
+dependencies {
+  include xplibs.portal
+}
+
+repositories {
+  mavenCentral()
+  xp.enonicRepo()
+}
+
+tasks.withType(Copy).configureEach {
+  includeEmptyDirs = false
+}
+
+java {
+  withSourcesJar()
+}
+
+publishing {
+  repositories {
+    // A plain Maven folder. scripts/publish-maven-branch.sh pushes it to the
+    // `maven` branch, which GitHub serves at
+    // https://raw.githubusercontent.com/Privatus-Analytics/enonic-privatus-analytics/maven/
+    maven {
+      name = "local"
+      url = layout.buildDirectory.dir("maven-repo")
+    }
+  }
+  publications {
+    maven(MavenPublication) {
+      from components.java
+      groupId = project.group
+      artifactId = projectName
+      version = project.version
+      pom {
+        name = "Privatus Analytics"
+        description = "Adds the Privatus Analytics tracking script to the head of every page of an Enonic XP site."
+        url = "https://github.com/Privatus-Analytics/enonic-privatus-analytics"
+        licenses {
+          license {
+            name = "MIT License"
+            url = "https://opensource.org/licenses/MIT"
+          }
+        }
+        organization {
+          name = "Privatus Analytics"
+          url = "https://privatusanalytics.com"
+        }
+        scm {
+          url = "https://github.com/Privatus-Analytics/enonic-privatus-analytics"
+          connection = "scm:git:https://github.com/Privatus-Analytics/enonic-privatus-analytics.git"
+        }
+      }
+    }
+  }
+}

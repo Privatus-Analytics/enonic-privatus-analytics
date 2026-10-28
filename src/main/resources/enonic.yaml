@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=https://www.schemastore.org/enonic-xp-application-8.0.0.json
+kind: "Application"
+title: "Privatus Analytics"
+description:
+  text: "Cookieless website analytics. Adds the Privatus Analytics script to your site."
+  i18n: "application.description"
+vendorName: "Privatus Analytics"
+vendorUrl: "https://privatusanalytics.com"

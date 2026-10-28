@@ -1,0 +1,10 @@
+build/
+.gradle/
+node_modules/
+.DS_Store
+.idea/
+*.iml
+SUBMISSION*.md
+
+# Keep the Gradle wrapper jar
+!gradle/wrapper/gradle-wrapper.jar

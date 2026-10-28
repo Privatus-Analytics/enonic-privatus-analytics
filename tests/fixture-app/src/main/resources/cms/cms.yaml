@@ -1,0 +1,5 @@
+kind: "CMS"
+form:
+  - type: "TextLine"
+    name: "csp"
+    label: "Content Security Policy the fixture page sets"
